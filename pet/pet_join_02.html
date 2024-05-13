@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/momentum-removebg-preview.png">
+    <link rel="stylesheet" href="./css/pet_join_02.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("pet_header.html");
+        })
+        $(document).ready(function () {
+            $("footer").load("pet_footer.html");
+        })
+        $(document).ready(function () {
+            $("nav").load("pet_nav.html");
+        })
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="joinTitle">
+            <span>회원가입</span>
+            <p>CREATE YOUR ACCOUNT</p>
+        </div>
+        <div id="joinIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+            </svg>
+            <span>
+                <hr>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+            </svg>
+            <span>
+                <hr>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+            </svg>
+        </div>
+        <div id="loginAll">
+            <div id="loginAll_title">
+                <span>회원가입</span>
+                <span>(필수)</span><span>입력사항을 꼭 작성해주셔야 다음 단계로 넘어가실 수 있습니다.</span>
+            </div>
+            <div id="loginAll_form">
+                <form>
+                    <table>
+                        <tr>
+                            <th colspan="2">아이디<span>(필수)</span></th>
+                            <th colspan="2">이름<span>(필수)</span></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="아이디" id="id" class="text stepText"></td>
+                            <td><input type="button" value="중복 체크" class="chkButton"></td>
+                            <td colspan="2"><input type="text" placeholder="이름" id="name" class="text stepText"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">비밀번호<span>(필수)</span></th>
+                            <th colspan="2">비밀번호 확인<span>(필수)</span></th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" placeholder="비밀번호" class="pass text stepText"></td>
+                            <td colspan="2"><input type="text" placeholder="비밀번호 확인" class="pass text stepText"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">휴대폰<span>(필수)</span></th>
+                            <th colspan="2">전화번호</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="tel" placeholder="휴대폰" id="tel" class="text stepText"></td>
+                            <td colspan="2"><input type="tel" placeholder="전화번호" class="text"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">주소<span>(필수)</span></th>
+                            <th colspan="2">상세주소</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="우편번호" class="text stepText address"></td>
+                            <td><input type="button" value="우편번호" class="chkButton"></td>
+                            <td><input type="text" placeholder="주소" class="text address"></td>
+                            <td><input type="text" placeholder="상세주소" class="text address"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div id="step">
+            <input type="button" value="회원가입" id="stepBtn">
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    const stepLogin = document.querySelectorAll('.stepText');
+    document.querySelector('#stepBtn').addEventListener('click', () => {
+        let cnt = 0;
+        let password = document.querySelectorAll('.pass');
+        stepLogin.forEach((loginItem) => {
+            if (loginItem.value != "") {
+                cnt++;
+            }
+        });
+        if (cnt == 6) {
+            if (password[0].value == password[1].value) {
+                if (count >= 2) {
+                    count = 0;
+                    window.location.href = "http://127.0.0.1:5500/pet/pet_join_03.html";
+                } else {
+                    alert('중복체크를 해주세요.');
+                }
+            } else if (password[0].value != password[1].value){
+                alert('비밀번호를 다시 확인해주세요.');
+            }
+
+        } else {
+            alert('필수 항목을 입력해주세요.');
+        }
+    })
+
+    const stepButton = document.querySelectorAll('.chkButton');
+    let count = 0;
+    stepButton.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            count++;
+        });
+    });
+
+    document.querySelectorAll('.chkButton')[1].addEventListener('click', () => { loadAddress() });
+
+    const addressAll = document.querySelectorAll('.address');
+    function loadAddress() {
+        new daum.Postcode({
+            oncomplete: function (data) {
+                addressAll[0].value = data.zonecode;
+                addressAll[1].value = data.address;
+                addressAll[2].focus();
+            }
+        }).open();
+    }
+
+</script>
+
+</html>

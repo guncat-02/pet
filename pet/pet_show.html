@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/momentum-removebg-preview.png">
+    <link rel="stylesheet" href="./css/pet_show.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("pet_header.html");
+        })
+        $(document).ready(function () {
+            $("footer").load("pet_footer.html");
+        })
+        $(document).ready(function () {
+            $("nav").load("pet_nav.html");
+        })
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="animal_title">
+            <span>MOMENTUM PET 반려동물 확인하기</span>
+            <p>MOMENTUM PET</p>
+        </div>
+        <div id="animalShow">
+            <div id="show_1" class="show">
+                <div id="animal_1" class="animal">
+                    <img src="./img/puppy-1207816_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>솔져</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>솔져</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td>리트리버</td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 16주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>남아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 6차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>150 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_2" class="show">
+                <div id="animal_2" class="animal">
+                    <img src="./img/puppy-4234435_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>리퍼</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>리퍼</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 10주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>남아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 3차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>220 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_3" class="show">
+                <div id="animal_3" class="animal">
+                    <img src="./img/dog-3389729_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>트레이서</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>트레이서</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td>웰시코기</td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>2살</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>여아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 접종완료</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>130 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_4" class="show">
+                <div id="animal_4" class="animal">
+                    <img src="./img/cat-2442332_640.jpg" class="img">
+                    <div class="row"><span>고양이 : </span><span>메이</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>메이</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 8주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>여아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 2차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>500 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_5" class="show">
+                <div id="animal_5" class="animal">
+                    <img src="./img/japanese-spitz-5735829_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>니코</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>니코</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td>포메라니안</td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 14주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>여아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 5차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>420 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_6" class="show">
+                <div id="animal_6" class="animal">
+                    <img src="./img/dog-5357794_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>절미</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>절미</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 8주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>여아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 2차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>100 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_7" class="show">
+                <div id="animal_7" class="animal">
+                    <img src="./img/kitten-2482743_640.jpg" class="img">
+                    <div class="row"><span>고양이 : </span><span>모이라</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>모이라</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 6주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>남아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 1차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>260 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_8" class="show">
+                <div id="animal_8" class="animal">
+                    <img src="./img/kitten-2771734_640.jpg" class="img">
+                    <div class="row"><span>고양이 : </span><span>메르시</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>메르시</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>2살</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>여아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 접종완료</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>160 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_9" class="show">
+                <div id="animal_9" class="animal">
+                    <img src="./img/husky-4193503_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>겐지</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>겐지</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td>허스키</td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 14주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>남아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 5차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>270 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_10" class="show">
+                <div id="animal_10" class="animal">
+                    <img src="./img/cat-1152812_640.jpg" class="img">
+                    <div class="row"><span>고양이 : </span><span>캐서디</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>캐서디</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 6주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>남아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 1차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>460 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_11" class="show">
+                <div id="animal_11" class="animal">
+                    <img src="./img/chihuahua-618453_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>로드호그</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>로드호그</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 6주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>남아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 1차</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>350 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div id="show_12" class="show">
+                <div id="animal_12" class="animal">
+                    <img src="./img/welsh-corgi-pembroke-4264959_640.jpg" class="img">
+                    <div class="row"><span>강아지 : </span><span>한조</span></div>
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_adopt.html">
+                    <div class="animal_info">
+                        <table>
+                            <tr>
+                                <th>이름</th>
+                                <td>한조</td>
+                            </tr>
+                            <tr>
+                                <th>품종</th>
+                                <td>웰시코기</td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>생후 12주</td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>남아</td>
+                            </tr>
+                            <tr>
+                                <th>건강기록</th>
+                                <td>종합백신 14</td>
+                            </tr>
+                            <tr>
+                                <th>입양비</th>
+                                <td>370 만원</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    const info = document.querySelectorAll('.animal_info');
+    const imgAnimal = document.querySelectorAll('.animal img');
+    info.forEach((infoItem, index) => {
+        infoItem.addEventListener('mouseleave', () => { leave(index) });
+    })
+
+    function leave(index) {
+        info[index].style.display = "none";
+    }
+
+    imgAnimal.forEach((imgItem, index) => {
+        imgItem.addEventListener('mouseenter', () => { enter(index) });
+    })
+
+    function enter(index) {
+        info[index].style.display = "block";
+    }
+
+    info.forEach((infoItem, index) => {
+        infoItem.addEventListener('click', () => { click(index) });
+    })
+
+    function click(index) {
+        const item = info[index].querySelectorAll('td');
+        const cast = {
+            "이름" : item[0].innerText,
+            "품종" : item[1].innerText,
+            "나이" : item[2].innerText,
+            "성별" : item[3].innerText,
+            "건강기록" : item[4].innerText,
+            "입양비용" : item[5].innerText
+        }
+
+        localStorage.setItem('cast', JSON.stringify(cast));
+    }
+
+    let data = new Array();
+    let dataImg = document.querySelectorAll('.img');
+    info.forEach((item, index) => {
+        let dataItem = item.querySelectorAll('td');
+        let dataInfo = {
+            "사진" : dataImg[index].getAttribute('src'),
+            "이름" : dataItem[0].innerText,
+            "품종" : dataItem[1].innerText,
+            "나이" : dataItem[2].innerText,
+            "성별" : dataItem[3].innerText,
+            "건강기록" : dataItem[4].innerText,
+            "입양비용" : dataItem[5].innerText
+        }
+        data.push(dataInfo);
+    })
+    localStorage.setItem('data', JSON.stringify(data));
+</script>
+
+</html>

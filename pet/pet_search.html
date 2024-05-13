@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/momentum-removebg-preview.png">
+    <link rel="stylesheet" href="./css/pet_search.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("pet_header.html");
+        })
+        $(document).ready(function () {
+            $("footer").load("pet_footer.html");
+        })
+        $(document).ready(function () {
+            $("nav").load("pet_nav.html");
+        })
+        $(document).ready(function () {
+            $("datasve").load("pet_show.html");
+        })
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="searchTop">
+            <span>MOMENTUM PET</span>
+            <p>반려동물 검색</p>
+        </div>
+        <div id="searchBody">
+            <div id="search" class="all">
+                <div id="searTitle">
+                    <input type="search" id="sear" placeholder="search">
+                    <input type="button" id="searBtn" value="search">
+                </div>
+                <div id="searList">
+                    <table>
+                        <thead id="searList_title">
+                            <tr>
+                                <th colspan="8">검색결과</th>
+                            </tr>
+                        </thead>
+                        <tbody id="searchList">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="list" class="all">
+                <div id="list_title">
+                    <p>LIST<span>
+                            <관심리스트 목록>
+                        </span></p>
+                </div>
+                <div id="list_all">
+                    <div id="chkMenu">
+                        <input type="checkbox" id="allChk" class="chkBox">
+                    </div>
+                    <table id="list_table">
+                    </table>
+                </div>
+                <div id="save">
+                    <input type="button" value="삭제" class="btn">
+                    <input type="button" value="저장" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    window.onload = function () {
+        addRow();
+    }
+
+    let data = JSON.parse(localStorage.getItem('data'));
+    function addRow() {
+        for (let i = 0; i < data.length; i++) {
+            const table = document.querySelector('#searchList');
+            const newRow = table.insertRow(0);
+            let newCell = new Array();
+            for (let i = 0; i < 8; i++) {
+                newCell[i] = newRow.insertCell(i);
+            }
+            newCell[0].innerHTML = "<img src = '" + data[i].사진 + "' width = '100px' height = '100px'>";
+            newCell[1].innerHTML = data[i].이름;
+            newCell[2].innerHTML = data[i].품종;
+            newCell[3].innerHTML = data[i].나이;
+            newCell[4].innerHTML = data[i].성별;
+            newCell[5].innerHTML = data[i].건강기록;
+            newCell[6].innerHTML = data[i].입양비용;
+            newCell[7].innerHTML = "<input type='button' class='love' value='관심등록' onclick = 'addList(this)'>";
+        }
+    }
+
+    document.querySelector('#searBtn').addEventListener('click', () => {
+        const table = document.querySelector('#searchList');
+        for (let i = table.rows.length - 1; i >= 0; i--) {
+            table.deleteRow(i);
+        }
+        let searWord = document.querySelector('#sear').value;
+        if (searWord == "") {
+            addRow();
+        } else if (searWord != "") {
+            result(searWord)
+        }
+    })
+
+    function result(searWord) {
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].이름.includes(searWord)) {
+                const table = document.querySelector('#searchList');
+                const newRow = table.insertRow(0);
+                let newCell = new Array();
+                for (let i = 0; i < 8; i++) {
+                    newCell[i] = newRow.insertCell(i);
+                }
+                newCell[0].innerHTML = "<img src = '" + data[i].사진 + "' width = '100px' height = '100px'>";
+                newCell[1].innerHTML = data[i].이름;
+                newCell[2].innerHTML = data[i].품종;
+                newCell[3].innerHTML = data[i].나이;
+                newCell[4].innerHTML = data[i].성별;
+                newCell[5].innerHTML = data[i].건강기록;
+                newCell[6].innerHTML = data[i].입양비용;
+                newCell[7].innerHTML = "<input type='button' class='love' value='관심등록' onclick = 'addList(this)'>";
+            }
+        }
+    }
+
+    function addList(e) {
+        let rowTd = e.closest('tr').querySelectorAll('td');
+        const table = document.querySelector('#list_table');
+        const newRow = table.insertRow(0);
+        let newCell = new Array();
+        for (let i = 0; i < 8; i++) {
+            newCell[i] = newRow.insertCell(i);
+        }
+        newCell[0].innerHTML = "<input type='checkbox' class='chkBox'>";
+        newCell[1].innerHTML = rowTd[0].innerHTML;
+        newCell[2].innerHTML = rowTd[1].innerHTML;
+        newCell[3].innerHTML = rowTd[2].innerHTML;
+        newCell[4].innerHTML = rowTd[3].innerHTML;
+        newCell[5].innerHTML = rowTd[4].innerHTML;
+        newCell[6].innerHTML = rowTd[5].innerHTML;
+        newCell[7].innerHTML = rowTd[6].innerHTML;
+
+
+    }
+
+    const chking = document.querySelector('#allChk');
+    chking.addEventListener('change', () => {
+        const rowChk = document.querySelectorAll('.chkBox');
+        const table = document.querySelector('#list_table');
+        if (table.rows.length != 0) {
+            for (let i = 0; i < rowChk.length; i++) {
+                if (i != 0) {
+                    rowChk[i].checked = chking.checked;
+                }
+            }
+        }
+    })
+
+    document.querySelectorAll('.btn')[0].addEventListener('click', () => {
+        if (confirm('삭제하시겠습니까?')) {
+            delRow()
+        }
+    });
+
+    function delRow() {
+        let rowChk = document.querySelectorAll('.chkBox');
+        const table = document.querySelector('#list_table');
+        if (table.rows.length != 0) {
+            for (let i = rowChk.length - 1; i > 0; i--) {
+                if (rowChk[i].checked) {
+                    rowChk[i].closest('tr').remove();
+                }
+            }
+        }
+        rowChk[0].checked = false;
+    }
+
+
+</script>
+
+</html>

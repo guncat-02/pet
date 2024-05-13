@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/momentum-removebg-preview.png">
+    <link rel="stylesheet" href="./css/pet_main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("pet_header.html");
+        })
+        $(document).ready(function () {
+            $("footer").load("pet_footer.html");
+        })
+        $(document).ready(function () {
+            $("nav").load("pet_nav.html");
+        })
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="show">
+            <img src="./img/cat-8130334_1280.jpg" id="img_1" class="img">
+            <img src="./img/corgi-6705821_1280.jpg" id="img_2" class="img">
+            <img src="./img/fox-1883658_1280.jpg" id="img_3" class="img">
+            <input type="button" value="&lang;" class="slideBt" id="leftBt">
+            <input type="button" value="&rang;" class="slideBt" id="rightBt">
+            <div class="intro intro_1">
+                <span id="in_1_1">MOMENTUM PET</span>
+                <span id="in_1_2"> - 반려동물과 함께하는 특별한 인연</span>
+            </div>
+            <div class="intro intro_2">
+                <span id="in_2_1">함께하는 영원한 우정과</span>
+                <span id="in_2_2">무한한 행복</span>
+                <span id="in_2_3"> - 반려동물들과의 영원한 우정을 꿈꾸는 분들을 위한 특별한 공간</span>
+            </div>
+            <div class="intro intro_3">
+                <span id="in_3_1">삶의 새로운 출발을 위한</span>
+                <span id="in_3_2">특별한 동반자</span>
+                <span id="in_3_3"> - 당신의 삶에 새로운 의미를 부여해 줄 특별한 동반자를 찾기 위한 공간</span>
+            </div>
+        </div>
+        <div id="panel">
+            <div id="panel_1">
+                <div id="panel_1_img" class="panelImg">
+                    <span id="panel_1_Msg" class="panel_msg">새로운 가족을 찾아 떠나는<p>특별한 여정</p></span>
+                    <img src="./img/dalmatian-8447265_1280.jpg">
+                </div>
+                <a href="http://127.0.0.1:5500/pet/pet_show.html">
+                    <div id="panel_1_off" class="offPanel">
+                        <hr class="iconLine_1 allLine line_1">
+                        <hr class="iconLine_1 allLine line_2">
+                        <hr class="iconLine_2 allLine line_1">
+                        <hr class="iconLine_2 allLine line_2">
+                        <span class="offIcon" id="icon_1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                            </svg>
+                        </span>
+                        <span class="offMsg offMsg_1">반려동물과의 만남을 위한 특별한 여정 떠나기</span>
+                        <p class="offMsg offMsg_1">반려동물이 당신을 기다리고 있습니다.</p>
+                        <span class="offIcon" id="icon_2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div id="panel_2">
+                <div id="panel_2_img" class="panelImg">
+                    <span id="panel_2_Msg" class="panel_msg">보다 나은 반려문화를 위해<p>알아야 할 이야기</p>
+                    </span>
+                    <img src="./img/european-shorthair-7559077_1280.jpg">
+                </div>
+                <div id="panel_2_off" class="offPanel">
+                    <hr class="iconLine_1_2 allLine line_1_2">
+                    <hr class="iconLine_1_2 allLine line_2_2">
+                    <hr class="iconLine_2_2 allLine line_1_2">
+                    <hr class="iconLine_2_2 allLine line_2_2">
+                    <span class="offIcon" id="icon_1_2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                        </svg>
+                    </span>
+                    <span class="offMsg offMsg_2">반려동물과 함께 영원한 우정 느끼기</span>
+                    <p class="offMsg offMsg_2">반려동물의 사랑스러운 모습을 느껴보세요.</p>
+                    <span class="offIcon" id="icon_2_2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div id="panel_3">
+                <div id="panel_3_1" class="panel_3_p">
+                    <div id="panel_3_1_img" class="panelImg">
+                        <img src="./img/momentum-removebg-preview.png">
+                    </div><a href="http://127.0.0.1:5500/pet/pet_company.html">
+                        <div id="panel_3_off" class="offPanel">
+                            <hr class="iconLine_1_3 allLine line_1_3">
+                            <hr class="iconLine_1_3 allLine line_2_3">
+                            <hr class="iconLine_2_3 allLine line_1_3">
+                            <hr class="iconLine_2_3 allLine line_2_3">
+                            <span class="offIcon" id="icon_1_3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                                </svg>
+                            </span>
+                            <span class="offMsg offMsg_3">MOMENTUM PET COMPANY</span>
+                            <p class="offMsg offMsg_3">MOMENTUM을 소개합니다.</p>
+                            <span class="offIcon" id="icon_2_3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div id="panel_3_2" class="panel_3_p">
+                    <div id="panel_3_2_img" class="panelImg">
+                        <img src="./img/teamwork-3213924_1280.jpg">
+                    </div>
+                    <div id="panel_3_2_off" class="offPanel">
+                        <hr class="iconLine_1_3 allLine line_1_3">
+                        <hr class="iconLine_1_3 allLine line_2_3">
+                        <hr class="iconLine_2_3 allLine line_1_3">
+                        <hr class="iconLine_2_3 allLine line_2_3">
+                        <span class="offIcon" id="icon_1_3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                            </svg>
+                        </span>
+                        <span class="offMsg offMsg_3">MOMENTUM PET MEMBERS</span>
+                        <p class="offMsg offMsg_3">MOMENTUM 스탭을 소개합니다.</p>
+                        <span class="offIcon" id="icon_2_3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    const imageNum = document.querySelectorAll('.img');
+    const introNum = document.querySelectorAll('.intro');
+    document.querySelector('#rightBt').addEventListener('click', () => {
+        let index = 0;
+        for (let i = 0; i < imageNum.length; i++) {
+            if (imageNum[i].style.zIndex != 0) {
+                if (i == imageNum.length - 1) {
+                    index = 0;
+                } else {
+                    index = i + 1;
+                }
+            }
+        }
+        show(index);
+    });
+
+    document.querySelector('#leftBt').addEventListener('click', () => {
+        let index = 0;
+        for (let i = imageNum.length - 1; i >= 0; i--) {
+            if (imageNum[i].style.zIndex != 0) {
+                if (i == 0) {
+                    index = imageNum.length - 1;
+                } else {
+                    index = i - 1;
+                }
+            }
+        }
+        show(index);
+    });
+
+    function show(index) {
+        for (let i = 0; i < imageNum.length; i++) {
+            if (index == i) {
+                imageNum[i].style.zIndex = 3;
+                introNum[i].style.zIndex = 4;
+            } else {
+                imageNum[i].style.zIndex = 0;
+                introNum[i].style.zIndex = 0;
+            }
+        }
+    }
+
+    const off = document.querySelectorAll('.offPanel');
+    const on = document.querySelectorAll('.panelImg');
+
+
+    off.forEach((e, index) => {
+        e.addEventListener('mouseleave', () => { leave(index) });
+    });
+
+    function leave(index) {
+        off[index].style.display = "none";
+    }
+
+    on.forEach((e, index) => {
+        e.addEventListener('mouseenter', () => { enter(index) })
+    });
+
+    function enter(index) {
+        off[index].style.display = "block";
+    }
+
+</script>
+
+</html>

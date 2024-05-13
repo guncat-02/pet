@@ -1,0 +1,93 @@
+#title {
+    text-align: center;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+
+#main {
+    display: block;
+}
+
+#log {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#log span {
+    display: block;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+#login {
+    z-index: 500;
+    position: fixed;
+    background-color: rgb(87, 87, 87);
+    width: 500px;
+    height: 300px;
+    top: 30%;
+    margin-left: 30%;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#logTitle {
+    color: rgb(211, 211, 211);
+    margin-top: 55px;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.loginButton {
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(87, 87, 87);
+    color: rgb(211, 211, 211);
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#logInsert {
+    display: inline;
+    text-align: center;
+}
+
+#logInput {
+    color: rgb(211, 211, 211);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#all {
+    background-color: rgb(185, 185, 185, 0.5);
+    height: 1000vw;
+    position: fixed;
+    width: 1000vh;
+    z-index: 400;
+    top: 0;
+    display: none;
+}
+
+#cancle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: 0px;
+    color: rgb(211, 211, 211);
+    font-size: 15px;
+}

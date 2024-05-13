@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/momentum-removebg-preview.png">
+    <link rel="stylesheet" href="./css/pet_adopt.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("pet_header.html");
+        })
+        $(document).ready(function () {
+            $("footer").load("pet_footer.html");
+        })
+        $(document).ready(function () {
+            $("nav").load("pet_nav.html");
+        })
+
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="adopt_title">
+            <span>MOMENTUM PET</span>
+            <p>입양신청서</p>
+        </div>
+        <div id="adoptAll">
+            <table>
+                <tr>
+                    <th>이름<span>(필수)</span></th>
+                    <td colspan="4"><input type="text" placeholder="이름" class="text chk"></td>
+                </tr>
+                <tr>
+                    <th>휴대폰<span>(필수)</span></th>
+                    <td colspan="4"><input type="tel" class="text chk" placeholder="휴대폰"></td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td colspan="4"><input type="email" class="text" placeholder="이메일"></td>
+                </tr>
+                <tr>
+                    <th>주소<span>(필수)</span></th>
+                    <td><input type="text" class="address" placeholder="우편번호" class="address chk"></td>
+                    <td><input type="button" value="우편번호" id="addressBtn"></td>
+                    <td><input type="text" placeholder="주소" class="address"></td>
+                    <td><input type="text" placeholder="상세주소" class="address"></td>
+                </tr>
+                <tr>
+                    <th>반려동물 여부<span>(필수)</span></th>
+                    <td colspan="4">
+                        <input type="radio" value="y" name="answer" class="radio chk">Y
+                        <input type="radio" value="n" name="answer" class="radio chk">N
+                    </td>
+                </tr>
+                <tr>
+                    <th>입양동물 이름</th>
+                    <td colspan="4"><input type="text" placeholder="이름" class="text animal_info"></td>
+                </tr>
+                <tr>
+                    <th>입양동물 품종</th>
+                    <td colspan="4"><input type="text" placeholder="품종" class="text animal_info"></td>
+                </tr>
+                <tr>
+                    <th>입양동물 나이</th>
+                    <td colspan="4"><input type="text" placeholder="나이" class="text animal_info"></td>
+                </tr>
+                <tr>
+                    <th>입양동물 성별</th>
+                    <td colspan="4"><input type="text" placeholder="성별" class="text animal_info"></td>
+                </tr>
+                <tr>
+                    <th>입양동물 건강기록</th>
+                    <td colspan="4"><input type="text" placeholder="건강기록" class="text animal_info"></td>
+                </tr>
+                <tr>
+                    <th>입양비용</th>
+                    <td colspan="4"><input type="text" placeholder="입양비용" class="text animal_info"></td>
+                </tr>
+                <tr>
+                    <th>날짜<span>(필수)</span></th>
+                    <td colspan="4"><input type="date" id="date" class="chk"></td>
+                </tr>
+                <tr>
+                    <th>입양 동의서</th>
+                    <td colspan="4"><textarea
+                            readonly>이것을 온라인으로 전송하는 것으로, 저는 이 설문지를 완전히 읽고 이해했다는 것을 인정합니다. 저는 신청하는 것이 승인을 보장하지 않으며 진실되지 않은 응답이나 이 신청 조건을 준수하지 않는 것은 제가 입양한 MOMENTUM PET 동물을 빼앗길 수 있다는 것을 알고 있습니다. 저는 위의 정보가 진실되며 그것이 증명단계를 거칠 것임을 이해하고 있습니다. 이 폼을 온라인으로 제출함으로써 저는 MOMENTUM PET의 약관을 준수하며 입양동물의 활동에서 발생할 수 있는 피해, 비용 또는 소송에서 MOMENTUM PET의 책임을 묻지 않는 것에 동의합니다. 저는 항상 동물(들)의 행동에 대한 모든 책임을 가지며 입양동물로 인해 발생한 모든 법적 책임에서 MOMENTUM PET을 자유롭게 하는 것에 동의합니다. 저는 입양 신청의 승인을 위해 MOMENTUM PET가 추천인 확인을 하고 가정 방문하는 것에 동의합니다. 만약 입양 동물(들)을 더 이상 돌볼 수 없을 경우 MOMENTUM PET으로 입양 동물(들)을 돌려보내며 다른 대체 입양 가정을 찾기 위해 2주간의 시간을 허용해 주는 것에 동의합니다.</textarea>
+                    </td>
+                </tr>
+                <tr id="tablefoot">
+                    <td colspan="5"><input type="button" value="제출하기" id="hand_in"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    const animal = document.querySelectorAll('.animal_info');
+    window.onload = function () {
+        let cast = JSON.parse(localStorage.getItem('cast'));
+        if (cast != undefined) {
+            animal[0].value = cast.이름;
+            animal[1].value = cast.품종;
+            animal[2].value = cast.나이;
+            animal[3].value = cast.성별;
+            animal[4].value = cast.건강기록;
+            animal[5].value = cast.입양비용;
+        }
+        localStorage.removeItem('cast');
+    }
+
+    const chkWr = document.querySelectorAll('.chk');
+    document.querySelector('#hand_in').addEventListener('click', () => {
+        let count = 0;
+        for (let i = 0; i < chkWr.length; i++) {
+            if (chkWr[i].value != "") {
+                count++;
+            }
+            if (chkWr[i].checked) {
+                count++;
+            }
+        }
+        if (count == 6) {
+            alert('신청서가 제출되었습니다.');
+            chkWr[i].clear();
+        }
+    })
+
+    document.querySelector('#addressBtn').addEventListener('click', () => { loadAddress() })
+
+    const addressAll = document.querySelectorAll('.address');
+    function loadAddress() {
+        new daum.Postcode({
+            oncomplete: function (data) {
+                addressAll[0].value = data.zonecode;
+                addressAll[1].value = data.address;
+                addressAll[2].focus();
+            }
+        }).open();
+    }
+</script>
+
+</html>

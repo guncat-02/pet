@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMENTUM HEADER</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/momentum-removebg-preview.png">
+    <link rel="stylesheet" href="./css/pet_header.css">
+</head>
+<body>
+    <header>
+        <div id="main">
+            <div id="log">
+                <span><a href="#none">LOGIN</a></span>
+                <span><a href="http://127.0.0.1:5500/pet/pet_join.html">JOIN</a></span>
+            </div>
+            <span id="title">
+                <h1><a href="http://127.0.0.1:5500/pet/pet_main.html">MOMENTUM PET</a></h1>
+            </span>
+        </div>
+    </header>
+    <div id="all">
+        <div id="login">
+            <input type="button" value="X" id="cancle">
+            <div id="logTitle">
+                <h1>LOGIN</h1>
+            </div>
+            <div id="logInsert">
+                <form>
+                    <table id="logInput">
+                        <tr>
+                            <th>ID</th>
+                            <td><input type="text" id="idIn" size="40"></td>
+                        </tr>
+                        <tr>
+                            <th>PW</th>
+                            <td><input type="password" id="passIn" size="40"></td>
+                        </tr>
+                    </table>
+                    <div id="buttonAll">
+                        <input type="button" value="로그인" id="logBt" class="loginButton">
+                        <input type="button" value="회원가입" id="joinBt" class="loginButton">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelectorAll('#log span')[0].addEventListener('click',() => {
+        const logOn = document.querySelector('#all');
+        logOn.style.display = "block";
+        
+    });
+    document.querySelector('#cancle').addEventListener('click',() => {
+        const logOn = document.querySelector('#all');
+        logOn.style.display = "none";
+    });
+
+    document.querySelector('#joinBt').addEventListener('click', ()=> {
+        window.location.href = "http://127.0.0.1:5500/pet/pet_join.html";
+    })
+</script>
+</html>
