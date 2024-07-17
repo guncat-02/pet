@@ -1,5 +1,5 @@
 # PET PROJECT
-<div align="center">
+<div>
   <img src="https://github.com/user-attachments/assets/36c417df-9513-48c3-b804-5b0735dfc5bc">
 </div>
 
