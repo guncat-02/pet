@@ -75,4 +75,5 @@
 <img src=https://github.com/user-attachments/assets/b2ee8054-f27f-4c5a-8381-53025d6a42b0 width=70%>
 
 <strong>- 분양 동물을 찜 할 수 있다.</strong>
+
 <strong>- 찜한 동물을 삭제 할 수 있다.</strong>
