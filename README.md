@@ -61,9 +61,6 @@
 <br>
 
 ## 주요 기능 소개
-### 분양 동물 전체보기
-
-
 ### 분양 신청서
 <img src=https://github.com/user-attachments/assets/e799bc0e-e68d-428d-81d2-c51eefb17109 width=70%>
 
@@ -73,3 +70,9 @@
 <img src=https://github.com/user-attachments/assets/10621ca7-b639-4d61-bddd-727e73ded306 width=70%>
 
 <strong>- local storage를 사용해 동물 정보를 저장해 두어 검색이 가능하도록 구현</strong>
+
+### 분양 동물 찜하기 및 삭제
+<img src=https://github.com/user-attachments/assets/b2ee8054-f27f-4c5a-8381-53025d6a42b0 width=70%>
+
+<strong>- 분양 동물을 찜 할 수 있다.</strong>
+<strong>- 찜한 동물을 삭제 할 수 있다.</strong>
