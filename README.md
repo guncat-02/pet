@@ -60,4 +60,13 @@
 
 <br>
 
+## 주요 기능 소개
+### 분양 동물 전체보기
 
+
+### 분양 신청서
+![download (1)](https://github.com/user-attachments/assets/e799bc0e-e68d-428d-81d2-c51eefb17109)
+
+<strong>- 분양 동물 클릭 시 분양 신청서에 정보가 자동으로 입력된다</storng>
+
+### 분양 동물 검색
